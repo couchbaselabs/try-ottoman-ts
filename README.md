@@ -1,4 +1,4 @@
-# Your First Ottoman App
+# Using Ottoman with Typescript
 
 This is a sample application for getting started with Ottoman using Couchbase Server. The application provides a Rest API and demonstrates ODM capabilities using Ottoman v2, Couchbase Node.js SDK 3, and Express. The application is a flight planner that allows the user to search for and select a flight route (including return flight) based on airports and dates.
 
