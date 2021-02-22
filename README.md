@@ -4,7 +4,7 @@ This is a sample application for getting started with Ottoman using Couchbase Se
 
 ## Prepare Couchbase Server
 
-To use the API, one would need to have Couchbase Server running locally. [Setup Couchbase Server using docker](https://docs.couchbase.com/server/current/install/getting-started-docker.html).
+To use the API, one would need to have Couchbase Server running locally. [Setup Couchbase Server using docker](https://docs.couchbase.com/server/7.0/install/getting-started-docker.html).
 
 Follow instructions to Setup a new cluster and once the database is running, [install the required dataset](https://docs.couchbase.com/server/current/manage/manage-settings/install-sample-buckets.html#install-sample-buckets-with-the-ui): `travel-sample`.
 
@@ -93,7 +93,7 @@ export default class LinkType extends IOttomanType {
     }
 
     validate(value: unknown, strict?: boolean): unknown {
-        if (!isLink(String(value))) {
+        if (value && !isLink(String(value))) {
             throw new ValidationError(`Field ${this.name} only allows a Link`);
         }
         return String(value);

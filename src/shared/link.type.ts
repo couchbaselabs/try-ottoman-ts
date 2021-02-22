@@ -14,7 +14,7 @@ export default class LinkType extends IOttomanType {
     }
 
     validate(value: unknown, strict?: boolean): unknown {
-        if (!isLink(String(value))) {
+        if (value && !isLink(String(value))) {
             throw new ValidationError(`Field ${this.name} only allows a Link`);
         }
         return String(value);
