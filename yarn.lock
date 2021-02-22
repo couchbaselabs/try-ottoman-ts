@@ -934,10 +934,10 @@ optionator@^0.8.1:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
-ottoman@^2.0.0-alpha.14:
-  version "2.0.0-alpha.14"
-  resolved "https://registry.yarnpkg.com/ottoman/-/ottoman-2.0.0-alpha.14.tgz#9eef1897000dd8a1e80760ecf081c8aa0d7b5e26"
-  integrity sha512-hcI0qwEdqp+Gvbn7ORtl9rWetJT6l+fxFWbFt1o8pG8fZr9bAHMtKE2H8cGHIGdpbftMAoYKRRoDa95hFs4QlQ==
+ottoman@2.0.0-alpha.17:
+  version "2.0.0-alpha.17"
+  resolved "https://registry.yarnpkg.com/ottoman/-/ottoman-2.0.0-alpha.17.tgz#52184b4888fa5a0c5025c1253173acd58d390e22"
+  integrity sha512-KFFKzX0yx3ldw2tE7WREuMaEiwVQqJw8DTm/SEv9ywZORY0tj5Qf5eLQhD1jAkgNajo51UhuRqbPDVQMHtTSTg==
   dependencies:
     couchbase "3.1.1"
     jsonpath "1.0.2"

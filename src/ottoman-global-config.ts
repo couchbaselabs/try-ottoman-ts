@@ -1,7 +1,15 @@
-import {Ottoman} from 'ottoman';
-import {config} from 'dotenv';
+const { Ottoman } = require('ottoman');
+const dotenv = require('dotenv');
+dotenv.config();
 
-config();
+const ottoman = new Ottoman({
+    modelKey: 'type',
+    collectionName: '_default'
+});
 
-const ottoman = new Ottoman({collectionName: '_default'});
-ottoman.connect('couchbase://localhost/travel-sample@Administrator:password')
+ottoman.connect({
+    bucketName: 'travel-sample',
+    connectionString: 'couchbase://localhost:8091',
+    username: 'Administrator',
+    password: 'password'
+});
