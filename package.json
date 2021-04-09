@@ -23,7 +23,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "ottoman": "2.0.0-alpha.17",
+    "ottoman": "^2.0.0-alpha.21",
     "swagger-ui-express": "^4.1.4",
     "yamljs": "^0.3.0"
   },

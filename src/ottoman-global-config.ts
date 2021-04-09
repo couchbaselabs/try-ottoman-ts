@@ -3,13 +3,13 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const ottoman = new Ottoman({
-    modelKey: 'type',
-    collectionName: '_default'
+  modelKey: 'type',
+  collectionName: '_default'
 });
 
 ottoman.connect({
-    bucketName: 'travel-sample',
-    connectionString: 'couchbase://localhost:8091',
-    username: 'Administrator',
-    password: 'password'
+  bucketName: 'travel-sample',
+  connectionString: 'couchbase://localhost:8091',
+  username: 'Administrator',
+  password: 'password'
 });

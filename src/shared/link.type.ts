@@ -1,24 +1,24 @@
-import {IOttomanType, registerType, ValidationError} from 'ottoman';
+import { IOttomanType, registerType, ValidationError } from 'ottoman';
 
 /**
  * Custom type to manage the links
  */
 export default class LinkType extends IOttomanType {
-    constructor(name) {
-        super(name, 'Link');
-    }
+  constructor(name) {
+    super(name, 'Link');
+  }
 
-    cast(value) {
-        this.validate(value);
-        return String(value);
-    }
+  cast(value) {
+    this.validate(value);
+    return String(value);
+  }
 
-    validate(value: unknown, strict?: boolean): unknown {
-        if (value && !isLink(String(value))) {
-            throw new ValidationError(`Field ${this.name} only allows a Link`);
-        }
-        return String(value);
+  validate(value: unknown, strict?: boolean): unknown {
+    if (value && !isLink(String(value))) {
+      throw new ValidationError(`Field ${this.name} only allows a Link`);
     }
+    return String(value);
+  }
 }
 
 /**
@@ -37,8 +37,8 @@ registerType(LinkType.name, linkTypeFactory);
  * @param value
  */
 function isLink(value) {
-    const regExp = new RegExp(
-        /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi,
-    );
-    return regExp.test(value);
+  const regExp = new RegExp(
+    /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi,
+  );
+  return regExp.test(value);
 };

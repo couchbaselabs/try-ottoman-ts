@@ -3,9 +3,9 @@
 
 
 "@types/node@^14.14.14":
-  version "14.14.16"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
-  integrity sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
+  version "14.14.37"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.37.tgz#a3dd8da4eb84a996c36e331df98d82abd76b516e"
+  integrity sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
 
 "@types/strip-bom@^3.0.0":
   version "3.0.0"
@@ -934,10 +934,10 @@ optionator@^0.8.1:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
-ottoman@2.0.0-alpha.17:
-  version "2.0.0-alpha.17"
-  resolved "https://registry.yarnpkg.com/ottoman/-/ottoman-2.0.0-alpha.17.tgz#52184b4888fa5a0c5025c1253173acd58d390e22"
-  integrity sha512-KFFKzX0yx3ldw2tE7WREuMaEiwVQqJw8DTm/SEv9ywZORY0tj5Qf5eLQhD1jAkgNajo51UhuRqbPDVQMHtTSTg==
+ottoman@^2.0.0-alpha.21:
+  version "2.0.0-alpha.21"
+  resolved "https://registry.yarnpkg.com/ottoman/-/ottoman-2.0.0-alpha.21.tgz#c2ed7dc825ba766fef1db65b4a1d21f849aeaa17"
+  integrity sha512-6JpgXZlE7feMuadfXAZ9JAQrysN35mbPD09rJwrJf8V1cV+yvWr970D1zGk/2vSzqyZU+KUvlW1RZYbVA0XyIA==
   dependencies:
     couchbase "3.1.1"
     jsonpath "1.0.2"
