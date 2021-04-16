@@ -4,7 +4,8 @@ dotenv.config();
 
 const ottoman = new Ottoman({
   modelKey: 'type',
-  collectionName: '_default'
+  collectionName: '_default',
+  keyGeneratorDelimiter: '_'
 });
 
 ottoman.connect({

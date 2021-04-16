@@ -19,6 +19,6 @@ const RouteSchema = new Schema({
   type: String,
 });
 
-const FlightModel = model('route', RouteSchema, { keyGeneratorDelimiter: '_' });
+const FlightModel = model('route', RouteSchema);
 
 export default FlightModel;
