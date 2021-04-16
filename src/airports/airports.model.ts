@@ -13,6 +13,6 @@ const AirportSchema = new Schema({
 
 AirportSchema.index.findByName = { by: 'name', type: 'n1ql' };
 
-const AirportModel = model('airport', AirportSchema);
+const AirportModel = model('airport', AirportSchema, { keyGeneratorDelimiter: '_' });
 
 export default AirportModel;
