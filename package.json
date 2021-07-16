@@ -21,15 +21,15 @@
   },
   "homepage": "https://github.com/couchbaselabs/try-ottoman#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "ottoman": "^2.0.0-beta.1",
-    "swagger-ui-express": "^4.1.4",
-    "yamljs": "^0.3.0"
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "ottoman": "2.0.0-beta.3",
+    "swagger-ui-express": "4.1.6",
+    "yamljs": "0.3.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.14",
-    "ts-node-dev": "^1.1.1",
-    "typescript": "^4.1.3"
+    "@types/node": "16.3.3",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.3.5"
   }
 }
