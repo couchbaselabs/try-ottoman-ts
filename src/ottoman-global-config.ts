@@ -1,16 +1,10 @@
-const { Ottoman } = require('ottoman');
+import { Ottoman, Couchbase } from 'ottoman';
 const dotenv = require('dotenv');
 dotenv.config();
 
 const ottoman = new Ottoman({
-  modelKey: 'type',
-  collectionName: '_default',
-  keyGeneratorDelimiter: '_'
+    modelKey: 'type',
+    scopeName: 'inventory'
 });
 
-ottoman.connect({
-  bucketName: 'travel-sample',
-  connectionString: 'couchbase://localhost:8091',
-  username: 'Administrator',
-  password: 'password'
-});
+export { ottoman };
