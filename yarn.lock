@@ -788,10 +788,10 @@ optionator@^0.8.1:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
-ottoman@2.0.0-beta.10:
-  version "2.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/ottoman/-/ottoman-2.0.0-beta.10.tgz#126b5bed5372ee8b7b8cc3e9e943eca79c20f6f9"
-  integrity sha512-YrwFFkIvrMeOEchbarVoxR5C1gASU+Rv62JZ6w1a1DB8JH7gIQPVaX2YzG5w9pEzhNgsrRUgf2XHTAsmtd23RQ==
+ottoman@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ottoman/-/ottoman-2.0.0.tgz#dc3563a34f5f59cce2e3914325d579719235364c"
+  integrity sha512-k8uk+rpGgxMyym992/fWS6i13O9MreTMVCC9v1cy6NIPkPdRG+6RMYvhS/ghuSQg1nsh8abiziM0lSrVjx+Rgw==
   dependencies:
     couchbase "3.2.2"
     jsonpath "1.1.1"
