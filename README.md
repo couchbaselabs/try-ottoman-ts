@@ -21,7 +21,7 @@ We can bootstrap our application. Create a directory and clone the repository on
 1. Clone this repo and install dependencies
 
 ```bash
-git clone https://github.com/couchbaselabs/try-ottoman-ts
+git clone https://github.com/couchbaselabs/try-ottoman-ts.git
 cd try-ottoman-ts
 yarn install
 ```
