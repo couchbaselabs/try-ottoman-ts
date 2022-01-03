@@ -18,15 +18,25 @@ We can bootstrap our application. Create a directory and clone the repository on
 
 ### Development Guide
 
-1 Clone this repo and install dependencies
+1. Clone this repo and install dependencies
 
 ```bash
-git clone https://github.com/couchbaselabs/try-ottoman-ts
+git clone https://github.com/couchbaselabs/try-ottoman-ts.git
 cd try-ottoman-ts
 yarn install
 ```
 
-3 Run the API example
+2. Set up Environment Variables
+    - Copy the `.env.example` into `.env`
+    ```
+    cp .env.example .env
+    ```
+    - Set the appropriate variables in the `OTTOMAN_CONNECTION_STRING`:
+        - The format of the connection string is: `couchbase://<cluster_ip>:<cluster_port>/<bucket_name>@<username>:<password>`
+        - The connection string in `.env.example` will work for a locally hosted Couchbase cluster with username `Administrator` and password `password`. Change the string as needed to fit your cluster.
+        - This API uses the `travel-sample` bucket, which you'll need to add to your cluster for proper functionality. [Learn more about installing sample buckets here.](https://docs.couchbase.com/server/current/manage/manage-settings/install-sample-buckets.html)
+    
+3. Run the API example
 
 ```bash
 yarn start
