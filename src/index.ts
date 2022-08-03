@@ -1,3 +1,4 @@
+import process from "process";
 import { ottoman } from "./ottoman-global-config";
 import App from './app';
 import HotelsController from './hotels/hotels.controller';
@@ -15,12 +16,7 @@ const app = new App(
 
 const main = async () => {
   try {
-    await ottoman.connect({
-      bucketName: 'travel-sample',
-      connectionString: 'couchbase://localhost:8091',
-      username: 'Administrator',
-      password: 'password',
-    });
+    await ottoman.connect(process.env.OTTOMAN_CONNECTION_STRING!);
     await ottoman.start();
     app.listen();
   } catch (e) {
